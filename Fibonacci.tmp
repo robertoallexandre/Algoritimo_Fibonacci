@@ -1,0 +1,41 @@
+algoritmo "Teste_Neurotech"
+//19.01.2022
+//Autor: Roberto Menezes
+
+var
+
+    n, contador, resultado: inteiro;
+    f1, f2, f3: inteiro;
+
+    Funcao ProxFibonacci(n: inteiro): inteiro
+    inicio
+       f3 <- f2 + f1;
+       f1  <- f2;
+       f2 <- f3;
+       retorne f3;
+    fimfuncao
+
+inicio
+
+    f1 <- 0;
+    f2 <- 1;
+    f3 <- 1;
+    
+    escreval("-------------------")
+    escreval("-- Alg Fibonacci --")
+    escreval("-------------------")
+    
+    escreva("Informe um valor: ")
+    leia(n)
+    para contador de 1 ate n faca
+    escreval(f3)
+    resultado <-  ProxFibonacci(n)
+    fimpara
+
+    se (resultado = 0) entao
+    escreval("Favor entrar apenas com números!")
+    senao
+    escreval("Para a entrada informada o resultado é: ", resultado)
+    fimse
+
+fimalgoritmo
